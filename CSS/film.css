@@ -1,0 +1,54 @@
+.film{
+
+}
+.row{
+  max-height: 40vh;
+}
+.cover2 {
+      background-image: url(Assets/filmCov2.jpg);
+      background-position: 0, 0;
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 100vh;
+    }  
+.cover3 {
+      background-image: url(Assets/filmCov1.jpg);
+      background-position: 0, 0;
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 100vh;
+  }
+.cover4 {
+      background-image: url(Assets/filmCov4.jpg);
+      background-position: 0, 0;
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 100vh;
+        }  
+.cover5 {
+      background-image: url(Assets/filmCov5.jpeg);
+      background-position: 0, 0;
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 100vh;
+    }  
+.cover6 {
+       background-image: url(Assets/filmCov6.jpg);
+       background-position: 0, 0;
+       position: relative;
+       background-repeat: no-repeat;
+       width: 100%;
+       max-height: 100vh;
+     }  
+.cover7 {
+         background-image: url(Assets/filmCov7.jpg);
+      background-position: 0, 0;
+      position: relative;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 100vh;
+   }

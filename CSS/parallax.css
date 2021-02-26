@@ -1,0 +1,51 @@
+.parallax-wrapper1{
+width: 100vw;
+height: 100vh;
+padding-top: 30vw 0 5vw;
+box-sizing: border-box;
+position: relative;
+transform-style: inherit;
+}
+
+.parallax-wrapper1:before{
+content:"";
+width: 100vw;
+height: 100vh;
+top:0;
+left:0;
+background-image: url("Assets/outdoor1.jpg");
+background-size: cover;
+position: absolute;
+z-index: -1;
+display: block;
+transform-origin: center center 0;
+transform: translateZ(-1px) scale(2);
+}
+
+
+.parallax-wrapper2  {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30vw 0 5vw;
+    box-sizing: border-box;
+    position: relative;
+    transform-style: inherit; 
+}
+.parallax-wrapper2:before{
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("Assets/outdoor2.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    }
+
+.parallax-wrapper2{
+    color: ivory;
+}

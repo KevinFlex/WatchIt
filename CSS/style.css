@@ -1,0 +1,51 @@
+html{
+    overflow: hidden;
+    height: 100%;
+}
+
+
+body{
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.jumbotron{
+    background-color: #2a3a69;    
+    color: #fff;
+    margin-bottom :0rem;
+}
+
+#informations{
+    background-color: #172131;
+}
+
+#films{
+    background-color: #200220;
+    color: #fff;
+}
+
+#news{
+    background-color: #172131;
+
+}
+
+#registration{
+    background-color: #200220;
+
+}
+
+.grid-film {
+    background-color: #200220;
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    padding: 0.2rem;
+}

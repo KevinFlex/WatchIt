@@ -1,133 +1,326 @@
-
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarContent" class="collapse navbar-collapse">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Info</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Films</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#">Booking</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#">Partners</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+    <title>WatchIt Outside!</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
+    </style>
+    
   </head>
   <body>
-    <div class="bd-example">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="C:\Users\kevin.vegiotti\Desktop\Perso\3.ExWebPage\Website\Assets\film.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+
+    <!---NAVBAR-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">       
+        <link rel="icon" type="image/png" sizes="16x16" href="">
+        <img class="logo" src="CSS\Assets\logo.png" alt="logoPicture">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#"><h5>Infos</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#headingOne"><h5>Films</h5></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link text-light" href="#"><h5>News</h5></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link text-light" href="#"><h5>Booking</h5></a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link text-light" href="#"><h5>Partners</h5></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+
+    <!---CAROUSEL-->
+
+      <div id="carouselHeadCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="firstSlide" src="CSS\Assets\film.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="secondSlide" src="CSS\Assets\film1.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="thirdSlide" src="CSS\Assets\film2.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="C:\Users\kevin.vegiotti\Desktop\Perso\3.ExWebPage\Website\Assets\film1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="carousel-control-prev" href="#carouselHeadCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHeadCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </header>
+
+
+    <article>
+    <!---  SECTION 1 -------->
+
+      <section class="section info" id="informations">
+        <div class="container">
+            <div class="jumbotron">
+              <h1 class="display-4">Informations</h1>
+              <p class="lead">This is an event about cultur, this year film industry is still amazing and promots new beautiful stories as well classic movies for the greatest pleasure of children and older.</p>
+              <hr class="my-4">
+              <p>You can't wait! Down here, you can see our best selection projected film.</p>
+              <a class="btn btn-primary btn-lg" href="#films" role="button">Movies</a>
+            </div>
+            <div>
+              <div class="jumbotron jumbotron-fluid" id=hiddenJumbo>
+                <div class="container col-10">
+                  <h4 class="display-flex">Informations</h4>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionInformation">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Where Watch it ?
+                    </button>
+                  </h2>
+                </div>
+              
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionInformation">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      When Watch It ?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionInformation">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Why Watch it ?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionInformation">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    
+      <!---PARALLAX EFFECT1-->
+      <div class="parallax-wrapper1">
+        <div class="container-fluid">
+          <h1 class="text-center">Welcome to Watch It Outside</h1>
+        </div>
+      </div>
+    
+          <!---  SECTION 2 -------->
+      <section class="section film" id="films">
+        <div id="carouselFilmCaptions" class="carousel slide" data-interval="10000000000000" data-ride="carousel">
+        
+          <div class="carousel-inner">
+          
+            <div class="carousel-item active">
+                <div class="container film">
+                  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h1>Click on one of our listing movie</h1>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img class="cover2" src="CSS/Assets/filmCov2.jpg" alt="cov2">
+
+                    </div>
+                  </div>
+
+                  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+                  <div class="row">
+                    <div class="col-6 col-md-4">
+                      <img class="cover3" src="CSS/Assets/filmCov3.jpg" alt="cov3">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img class="cover4" src="CSS/Assets/filmCov4.jpg" alt="cov4">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img class="cover5" src="CSS/Assets/filmCov5.jpeg" alt="cov5">
+                    </div>
+                  </div>
+
+                  <!-- Columns are always 50% wide, on mobile and desktop -->
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="cover5" src="CSS/Assets/filmCov6.jpg" alt="cov6">
+                    </div>
+                    <div class="col-6">
+                      <img class="cover6" src="CSS/Assets/filmCov7.jpg" alt="cov7">
+                    </div>
+                  </div>
+                </div>              
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Assets\film1.jpg" alt="Second Slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Assets\film2.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="C:\Users\kevin.vegiotti\Desktop\Perso\3.ExWebPage\Website\Assets\film2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </section>
+    
+      <!---PARALLAX EFFECT2-->
+    
+      <div class="parallax-wrapper2">
+        <div class="container-fluid">
+          <h1 class="text-center">What's up in public garden ?</h1>
+        </div>
+      </div>
+    
+          <!---  SECTION 3 -------->
+    
+      <section class="section news" id="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Collapsible Group Item #1
-          </button>
-        </h2>
-      </div>
-  
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </section>
+    
+    
+      <!---PARALLAX EFFECT3-->
+    
+      <div id="parallax-image3">
+        <div class="row h-100">
+          <div class="col-sm-12 align-self-center">
+            <h1 class="text-center">Pre-registration online</h1>
+          </div>
+        
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Collapsible Group Item #2
-          </button>
-        </h2>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          <!---  SECTION 4 -------->
+    
+      <section class="section registration" id="registration">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Collapsible Group Item #3
-          </button>
-        </h2>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
-    <h1>Hello, world!</h1>
+      </section>
+    </article>
+
+        <!---  FOOTER -------->
+
+
+    <footer>
+      <p>Tous droits réservés</p>
+        <nav>
+          <ul>
+            <li><a href="/">Retour à l’accueil</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/plan">Plan du site</a></li>
+          </ul>
+        </nav>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+            <link type="text/css" rel="stylesheet" href="CSS\carousel.css" />
+            <link type="text/css" rel="stylesheet" href="CSS\navbar.css" />
+            <link type="text/css" rel="stylesheet" href="CSS\style.css" />
+            <link type="text/css" rel="stylesheet" href="CSS\responsive.css" />
+            <link type="text/css" rel="stylesheet" href="CSS\parallax.css" />
+            <link type="text/css" rel="stylesheet" href="CSS\film.css" />
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
   </body>
 </html>

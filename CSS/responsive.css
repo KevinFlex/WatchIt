@@ -1,0 +1,27 @@
+/*  MEDIUM AND HIGHER SCREEN  */
+
+
+@media (min-width: 767px) {
+    #hiddenJumbo{
+display :none;
+}
+}
+
+
+/*   SMALL SCREEN  */
+
+
+@media (max-width: 767px) {
+
+    .jumbotron{
+display :none;
+    }
+    #hiddenJumbo{
+display :block;
+    }
+
+    .logo{
+        max-height: 40px;
+        max-width: 50px;
+    }
+}
