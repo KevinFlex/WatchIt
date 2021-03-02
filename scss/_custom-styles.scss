@@ -11,3 +11,35 @@
 //    box-shadow: 3px 3px theme-color-level($color, -3);
 //  }
 //}
+
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.bg-outdoor {
+  background-image: url("../assets/outdoor1.jpg");
+}
+
+.bg-outdoor2 {
+  background-image: url("../assets/outdoor2.jpg");
+}
+
+
+.bg-parallax {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-overlay:before {
+  content: '';
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+}
