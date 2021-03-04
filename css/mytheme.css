@@ -7415,6 +7415,9 @@ textarea.form-control-lg {
 .bg-outdoor2 {
   background-image: url("../assets/outdoor2.jpg"); }
 
+.bg-outdoor3 {
+  background-image: url("../assets/outdoor3.jpg"); }
+
 .bg-parallax {
   height: 400px;
   background-size: cover;

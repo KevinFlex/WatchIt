@@ -26,17 +26,21 @@
   background-image: url("../assets/outdoor2.jpg");
 }
 
+.bg-outdoor3 {
+  background-image: url("../assets/outdoor3.jpg");
+}
 
 .bg-parallax {
   height: 400px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
 }
 
-.bg-overlay:before {
+.bg-parallax:before {
   content: '';
-  position: absolute;
+  position: relative;
   top:0;
   bottom: 0;
   left: 0;
