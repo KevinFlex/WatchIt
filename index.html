@@ -9,6 +9,8 @@
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
   <link rel="stylesheet" href="css/mytheme.min.css">
+  <link rel="stylesheet" href="css/mytheme.min.scss">
+
 </head>
 
 <body>
@@ -179,16 +181,16 @@
         <div class="row">
           <div class="col-md-8 bg-dark text-light p-2 mtb-2 justify-content-center">
             <h1>Click on one of our listing movie</h1>
-          </div>
-          <div class="col-12 col-md-4 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov1.jpg" alt="First Cover">
-            <a href="#Movie1"></a>
-            <div class="d-none" id="Movie1">
-              <video controls muted autoplay preload="auto" id="idvideo2" >
+            <div class="d-block w-100" id="Movie1">
+              <video controls preload="auto" id="idvideo2" >
                 <source type="video/mp4" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4"></source>
 
             Votre navigateur ne supporte pas la balise HTML5 video.
             </video>
+          </div>
+          <div class="col-12 col-md-4 p-2 mb-2">
+            <img class="d-block w-100 film-img" src="assets\filmCov1.jpg" alt="First Cover">
+            <a href="#Movie1"></a>
             </div>
           </div>
         </div>
