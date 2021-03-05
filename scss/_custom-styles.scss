@@ -12,6 +12,10 @@
 //  }
 //}
 
+.logo{
+  size: 300px, 100px;
+}
+
 .carousel-img {
   height: 500px;
   object-fit: cover;
@@ -46,4 +50,13 @@
   left: 0;
   right: 0;
   background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.film-img {
+  height: 600px;
+}
+
+.img-logo {
+  height: 150px;
+  margin: 0rem 5rem;
 }

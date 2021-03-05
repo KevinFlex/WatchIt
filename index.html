@@ -9,7 +9,6 @@
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
   <link rel="stylesheet" href="css/mytheme.min.css">
-  <link rel="stylesheet" href="css/mytheme.min.scss">
 
 </head>
 
@@ -94,17 +93,29 @@
 
 
   <article>
+    
+    <!--SCROLLSPY-->
+    <div id="list-spy" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#informations">Informations</a>
+      <a class="list-group-item list-group-item-action" href="#films">Movies</a>
+      <a class="list-group-item list-group-item-action" href="#news">News</a>
+      <a class="list-group-item list-group-item-action" href="#registration">Registrations</a>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#list-spy" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
     <!---  SECTION 1 -------->
 
     <section class="section info" id="informations">
       <div class="bg-light p-5 mb-5">
         <div class="container">
-          <h1 class="display-4">Informations</h1>
-          <p class="lead">This is an event about cultur, this year film industry is still amazing and promots new
-            beautiful stories as well classic movies for the greatest pleasure of children and older.</p>
-          <hr class="my-4">
-          <p>You can't wait! Down here, you can see our best selection projected film.</p>
-          <a class="btn btn-primary btn-lg" href="#films" role="button">Movies</a>
+          <header>
+            <h1 class="display-4">Informations</h1>
+            <p class="lead">This is an event about cultur, this year film industry is still amazing and promots new
+              beautiful stories as well classic movies for the greatest pleasure of children and older.</p>
+            <hr class="my-4">
+            <p>You can't wait! Down here, you can see our best selection projected film.</p>
+            <a class="btn btn-primary btn-lg" href="#films" role="button">Movies</a>
+          </header>
         </div>
       </div>
       <div class="container">
@@ -177,44 +188,56 @@
     <!---  SECTION 2 -------->
     <section class="section film" id="films">
       <div class="container bg-gradient bg-secondary">
+        <header>
+          <h1 class="display-4">Click on one of movies</h1>
+          <video controls class="d-none" controlsList="fullscreen">
+            <source id="movie1" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie2" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie3" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie4" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie5" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie6" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie7" src="vid1.webm" type='video/webm;codecs="vp8, opus"'/>
+            <source id="movie8" src="vid2.mp4" type='video/mp4;codecs="avc1.4D401E, mp4a.40.2"'/>
+        </video>
+        </header>
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <div class="row">
-          <div class="col-md-8 bg-dark text-light p-2 mtb-2 justify-content-center">
-            <h1>Click on one of our listing movie</h1>
-            <div class="d-block w-100" id="Movie1">
-              <video controls preload="auto" id="idvideo2" >
-                <source type="video/mp4" src="https://outils-javascript.aliasdmc.fr/img/videos/mov_bbb.mp4"></source>
-
-            Votre navigateur ne supporte pas la balise HTML5 video.
-            </video>
+          <div class="col-7 col-md-6 bg-dark text-light p-2 mtb-2 justify-content-center">
+            <img class="d-block w-100 film-img" src="assets\filmCov7.jpg" alt="First Cover">
+            <a href="#movie1"></a>
           </div>
-          <div class="col-12 col-md-4 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov1.jpg" alt="First Cover">
-            <a href="#Movie1"></a>
+          <div class="col-5 col-md-6 p-2 mb-2">
+            <img class="d-block w-100 film-img" src="assets\filmCov1.jpg" alt="Second Cover">
+            <a href="#movie2"></a>
             </div>
           </div>
-        </div>
 
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
         <div class="row">
           <div class="col-6 col-md-4 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov2.jpg" alt="Second Cover">
+            <img class="d-block w-100 film-img" src="assets\filmCov2.jpg" alt="Third Cover">
+            <a href="#movie3"></a>
           </div>
           <div class="col-6 col-md-4 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov3.jpg" alt="Third Cover">
+            <img class="d-block w-100 film-img" src="assets\filmCov3.jpg" alt="Fourth Cover">
+            <a href="#movie4"></a>
           </div>
           <div class="col-12 col-md-4 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov4.jpg" alt="Fourth Cover">
+            <img class="d-block w-100 film-img" src="assets\filmCov4.jpg" alt="Fifth Cover">
+            <a href="#movie5"></a>
           </div>
         </div>
 
         <!-- Columns are always 50% wide, on mobile and desktop -->
         <div class="row">
           <div class="col-6 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov5.png" alt="Fifth Cover">
+            <img class="d-block w-100 film-img" src="assets\filmCov5.png" alt="Sixth Cover">
+            <a href="#movie6"></a>
           </div>
           <div class="col-6 p-2 mb-2">
-            <img class="d-block w-100 film-img" src="assets\filmCov6.jpg" alt="Sixth Cover">
+            <img class="d-block w-100 film-img" src="assets\filmCov6.jpg" alt="Seventh Cover">
+            <a href="#movie7"></a>
           </div>
         </div>
       </div>
@@ -232,6 +255,9 @@
 
     <section class="section news" id="news">
       <div class="container">
+        <header>
+          <h1 class="display-4">News and updates</h1>
+        </header>
         <div class="row mt-3">
           <div class="col-sm col-lg-4">
             <div class="card">
@@ -279,6 +305,9 @@
 
     <section class="section registration" id="registration">
       <div class="container bg-gradient bg-primary">
+        <header>
+          <h1 class="display-4">Pre-registrate yourself and be aware for the first places</h1>
+        </header>
         <form>
            <div class="form-dark inputs-transparent">
              <div class="mb-3">
@@ -328,19 +357,19 @@
         </form>
       </div>
     </section>
+    </div>
   </article>
 
   <!---  FOOTER -------->
 
   <footer>
-    <p>Tous droits réservés</p>
-    <nav>
-      <ul>
-        <li><a href="/">Retour à l’accueil</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/plan">Plan du site</a></li>
-      </ul>
-    </nav>
+    <div class="bg-dark text-center">
+      <div class="d-block justify-content-center">
+      <img src="../assets/socialLogo.jpg" class="rounded img-logo" alt="SocialLink">
+      <img src="../assets/bostonLogo.jpg" class="rounded img-logo" alt="OfficialLink">
+      </div>
+    </div>  
+    <p>Copyright (C)</p>
   </footer>
 
 
