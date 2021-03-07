@@ -17,10 +17,13 @@
 }
 
 .carousel-img {
-  height: 500px;
+  height: 680px;
   object-fit: cover;
 }
 
+.accordion-body{
+  color: ivory;
+}
 
 .bg-outdoor {
   background-image: url("../assets/outdoor1.jpg");
@@ -54,9 +57,22 @@
 
 .film-img {
   height: 600px;
-}
+  object-fit: contain;
+  }
 
 .img-logo {
-  height: 150px;
+  height: 90px;
   margin: 0rem 5rem;
+}
+
+section { 
+  background: linear-gradient($indigo-100,$indigo-500); 
+}
+
+.form{
+  background: linear-gradient($indigo-500,$indigo-900); 
+}
+
+.film-player{
+  visibility: hidden;
 }
