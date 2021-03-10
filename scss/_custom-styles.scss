@@ -12,8 +12,11 @@
 //  }
 //}
 
+
+
+//-----------MENU----------------
 .logo{
-  size: 300px, 100px;
+  height: 80px;
 }
 
 .carousel-img {
@@ -75,4 +78,16 @@ section {
 
 .film-player{
   visibility: hidden;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rounded img-logo{
+  a:hover{
+    size: 120%;
+    background-color: rgba (0,0,0,0.4);
+  }
 }
