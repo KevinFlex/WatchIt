@@ -20,7 +20,7 @@
 }
 
 .carousel-img {
-  height: 680px;
+  height: 730px;
   object-fit: cover;
 }
 
@@ -95,14 +95,3 @@ p {
   background-color: rgba($color: #000000, $alpha: 0.4);
 }
 
-//------------RESPONSIVNESS
-
-@media (max-width: 600px) {
-  .film-img {
-    height: 300px;
-    object-fit: contain;
-}
-#navbar-spy {
-  display: hidden;
-}
-}
