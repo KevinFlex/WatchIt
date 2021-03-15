@@ -41,35 +41,40 @@
 .bg-outdoor3 {
   background-image: url("../assets/outdoor3.jpg");
 }
+.bg-outdoor3 {
+  background-image: url("../assets/outdoor4.jpg");
+}
 
 .bg-parallax {
   height: 400px;
+  -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
+  position: relative;
 }
 
 .bg-parallax:before {
   content: '';
-  position: relative;
+  display: block;
+  position: absolute;
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba($color: #000000, $alpha: 0.3);
+  background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
 //---------SECTION2: MOVIE-----------
 
 .film-img {
-  height: 600px;
   object-fit: contain;
   }
 
 
 .img-logo {
-  height: 90px;
+  height: 40px;
   margin: 0rem 5rem;
 }
 
@@ -94,4 +99,3 @@ p {
   size: 120%;
   background-color: rgba($color: #000000, $alpha: 0.4);
 }
-

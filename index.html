@@ -19,7 +19,8 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <link rel="icon" type="image/png" sizes="16x16" href="#">
       <img class="logo" src="assets/logo.png" alt="logoPicture">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="navbarContent" class="collapse navbar-collapse justify-content-center">
@@ -54,7 +55,7 @@
     </nav>
 
     <!---CAROUSEL-->
-    <div id="carouselHeadCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselHeadCaptions" class="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100 carousel-img" src="assets/film.jpg" alt="First slide">
@@ -93,452 +94,507 @@
 
   <article>
 
-    <!--SCROLLSPY-->
-    <nav id="navbar-spy" class="navbar navbar-dark bg-light sticky-lg-top d-none d-sm-flex px-3">
-      <a class="navbar-brand text-dark" href="#">Back to the top</a>
+    <!--PARALLAX EFFECT-->
+    <div class="bg-outdoor4 bg-parallax text-white d-flex justify-content-center align-item-center">
+      <h2 class="text-center" style="z-index: 1; position: relative;">Most Poular Family Movie</h2>
+    </div>
+    <!---  SECTION 1 -------->
 
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#movie">Movie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#news">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#registration">Registration</a>
-        </li>
-      </ul>
-    </nav>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="0" tabindex="0">
-
-      <!---  SECTION 1 -------->
-
-      <section class="info" id="about">
-        <div class="container">
-        <div class="bg-light bg-gradient py-3 px-5 mb-3">
+    <section class="info py-5" id="about">
+      <div class="container">
+        <div class="bg-light bg-gradient p-3 mb-3 rounded">
           <header>
             <h2 class="display-4">Information</h2>
             <p class="lead">This is an event about cultur, this year film ndustry is still amazingand promots new
               beautiful stories as well classic movie for the greatest pleasure of children andolder.</p>
             <hr class="my-4">
             <p><strong>You can't wait!</strong> Down here, you can see our best selection rojected film.</p>
-            <a class="btn btn-outline-danger btn-lg mt-3" href="#movie" ole="button">Movie</a>
+            <a class="btn btn-outline-primary btn-lg mt-3" href="#movie" ole="button">Movie</a>
           </header>
         </div>
-        <div class="">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+        <div class="accordion bg-light" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show text-dark" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-dark">
+                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-dark">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-dark">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
         </div>
       </div>
-      </section>
-      <!---PARALLAX EFFECT1-->
-      <div class="bg-outdoor bg-parallax text-white">
-        <div class="container-fluid">
-          <h1 class="text-center">Welcome to Watch It Outside</h1>
-        </div>
-      </div>
-      <!---  SECTION 2 -------->
-      <section class="film" id="movie">
-        <div class="container py-5">
-          <header>
-            <div class="display-4 text-center">
-              <h1>Click on one of movies</h1>
-            </div>
-          </header>
-
-          <!--MOVIE1 -->
-          <!-- Stack the columns on mobile by making one full-width and the    ther half-width -->
-          <div class="row">
-            <div class="col-7 col-md-6 p-2 mtb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal1"
-                  src="assets/filmCov7.jpg" alt="First Cover"></a>
-
-              <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ePNGjp2Bx-c" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--MOVIE2 -->
-
-            <div class="col-5 col-md-6 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal2"
-                  src="assets/filmCov1.jpg" alt="Second Cover"></a>
-
-              <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ByXuk9QqQkk" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--MOVIE2-->
-          <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide   n desktop -->
-          <div class="row">
-
-            <!--MOVIE3 -->
-
-            <div class="col-6 col-md-4 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal3"
-                  src="assets/filmCov2.jpg" alt="Third Cover"></a>
-
-              <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UBX2Yy2dqg4" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--MOVIE4 -->
-
-            <div class="col-6 col-md-4 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal4"
-                  src="assets/filmCov3.jpg" alt="Fourth Cover"></a>
-
-              <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ELeMaP8EPAA" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--MOVIE5 -->
-
-            <div class="col-12 col-md-4 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal5"
-                  src="assets/filmCov4.jpg" alt="Fifth Cover"></a>
-
-              <div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-xuugq7fito" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Columns are always 50% wide, on mobile and desktop -->
-          <div class="row">
-            <!--MOVIE6 -->
-
-            <div class="col-6 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal6"
-                  src="assets/filmCov5.png" alt="Sixth Cover"></a>
-
-              <div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dlnmQbPGuls" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--MOVIE7 -->
-
-            <div class="col-6 p-2 mb-2">
-              <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal7"
-                  src="assets/filmCov6.jpg" alt="Seventh Cover"></a>
-
-              <div class="modal fade" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen-lg-down">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="ratio ratio-16x9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/o8zKrA5kbNE" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <!---PARALLAX EFFECT2-->
-      <div class="bg-outdoor2 bg-parallax text-white">
-        <div class="container-fluid">
-          <h1 class="text-center">What's up in Public Garden</h1>
-        </div>
-      </div>
-      <!---  SECTION 3 -------->
-      <section class="news" id="news">
-        <div class="container py-5">
-          <header>
-            <h1 class="display-4">News and updates</h1>
-          </header>
-          <div class="row mt-3">
-            <div class="col-sm col-lg-4 mb-5">
-              <div class="card">
-                <img src="../assets/news1.jpg" class="card-img-top" lt="news1">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on he card title and make up the bulk of the
-                    card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm col-lg-4 mb-5">
-              <div class="card">
-                <img src="../assets/news3.jpg" class="card-img-top" lt="news2">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on he card title and make up the bulk of the
-                    card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm col-lg-4 mb-5">
-              <a class="twitter-timeline" data-lang="en" data-height="565" data-theme="dark"
-                href="https://twitter.com/FOPG?ref_src=twsrc%5Etfw">Tweets by FOPG</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!---PARALLAX EFFECT3-->
-      <div class="bg-outdoor3 bg-parallax text-white">
-        <div class="container-fluid">
-          <h1 class="text-center">Pre-registration open</h1>
-        </div>
-      </div>
-      <!---  SECTION 4 -------->
-      <section class="registration" id="registration">
-        <div class="container form bg-secondary bg-gradient py-5">
-          <header>
-            <h1 class="display-4 text-light">Pre-registrate yourself and be aware for the first places availables</h1>
-          </header>
-
-          <form class="row g-3">
-            <div class="col-md-4">
-              <label for="validationServer01" class="form-label form-dark inputs-transparent text-light">First
-                name</label>
-              <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationServer02" class="form-label form-dark inputs-transparent text-light">Last
-                name</label>
-              <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationServerUsername"
-                class="form-label form-dark inputs-transparent text-light">Email</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                <input type="text" class="form-control is-invalid" id="validationServerUsername"
-                  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                  Please enter an email.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationServer03" class="form-label form-dark inputs-transparent text-light">City</label>
-              <input type="text" class="form-control is-invalid" id="validationServer03"
-                aria-describedby="validationServer03Feedback" required>
-              <div id="validationServer03Feedback" class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer04" class="form-label form-dark inputs-transparent text-light">State</label>
-              <select class="form-select is-invalid" id="validationServer04"
-                aria-describedby="validationServer04Feedback" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-              <div id="validationServer04Feedback" class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer05" class="form-label form-dark inputs-transparent text-light">Zip</label>
-              <input type="text" class="form-control is-invalid" id="validationServer05"
-                aria-describedby="validationServer05Feedback" required>
-              <div id="validationServer05Feedback" class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
-            </div>
-            <select class="form-dark form-select" multiple aria-label="multiple select example">
-              <option selected>Select one or multiple date of projection</option>
-              <option value="1">August 5th</option>
-              <option value="2">August 6th</option>
-              <option value="3">August 7th</option>
-              <option value="4">August 8th</option>
-            </select>
-            <div class="col-12">
-              <div class="form-dark inputs-transparent">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select the ticket number</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                  <option value="4">Four</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
-                  aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Agree to terms and conditions
-                </label>
-                <div id="invalidCheck3Feedback" class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="button" class="btn btn-success mt-3">Submit form</button>
-            </div>
-          </form>
-        </div>
-      </section>
+    </section>
+    <!---PARALLAX EFFECT1-->
+    <div class="bg-outdoor bg-parallax text-white d-flex justify-content-center align-item-center">
+      <h2 class="text-center" style="z-index: 1; position: relative;">Welcome to Watch It Outside</h2>
     </div>
+    <!---  SECTION 2 -------->
+    <section class="film" id="movie">
+      <div class="container py-5">
+        <header>
+          <div class="display-4 text-center">
+            <h1>Click on one of movies</h1>
+          </div>
+        </header>
 
+        <!--MOVIE1 -->
+        <!-- Stack the columns on mobile by making one full-width and the    ther half-width -->
+        <div class="row">
+          <div class="col-6 col-md-6 p-2 mtb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal1"
+                src="assets/filmCov7.jpg" alt="First Cover"></a>
+
+            <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ePNGjp2Bx-c" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--MOVIE2 -->
+
+          <div class="col-6 col-md-6 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal2"
+                src="assets/filmCov1.jpg" alt="Second Cover"></a>
+
+            <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ByXuk9QqQkk" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MOVIE2-->
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide   n desktop -->
+        <div class="row">
+
+          <!--MOVIE3 -->
+
+          <div class="col-6 col-md-4 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal3"
+                src="assets/filmCov2.jpg" alt="Third Cover"></a>
+
+            <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UBX2Yy2dqg4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--MOVIE4 -->
+
+          <div class="col-6 col-md-4 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal4"
+                src="assets/filmCov3.jpg" alt="Fourth Cover"></a>
+
+            <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ELeMaP8EPAA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--MOVIE5 -->
+
+          <div class="col-12 col-md-4 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal5"
+                src="assets/filmCov4.jpg" alt="Fifth Cover"></a>
+
+            <div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/-xuugq7fito" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <!--MOVIE6 -->
+
+          <div class="col-6 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal6"
+                src="assets/filmCov5.png" alt="Sixth Cover"></a>
+
+            <div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/dlnmQbPGuls" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--MOVIE7 -->
+
+          <div class="col-6 p-2 mb-2">
+            <a><img class="d-block w-100 film-img" data-bs-toggle="modal" data-bs-target="#modal7"
+                src="assets/filmCov6.jpg" alt="Seventh Cover"></a>
+
+            <div class="modal fade" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/o8zKrA5kbNE" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!---PARALLAX EFFECT2-->
+    <div class="bg-outdoor2 bg-parallax text-white">
+      <div class="container-fluid">
+        <h1 class="text-center">What's up in Public Garden</h1>
+      </div>
+    </div>
+    <!---  SECTION 3 -------->
+    <section class="news" id="news">
+      <div class="container py-5">
+        <header>
+          <h1 class="display-4">News and updates</h1>
+        </header>
+        <div class="row mt-3">
+          <div class="col-sm col-lg-4 mb-5">
+            <div class="card">
+              <img src="../assets/news1.jpg" class="card-img-top" lt="news1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on he card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-lg-4 mb-5">
+            <div class="card">
+              <img src="../assets/news3.jpg" class="card-img-top" lt="news2">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on he card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-lg-4 mb-5">
+            <a class="twitter-timeline" data-lang="en" data-height="565" data-theme="dark"
+              href="https://twitter.com/FOPG?ref_src=twsrc%5Etfw">Tweets by FOPG</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---PARALLAX EFFECT3-->
+    <div class="bg-outdoor3 bg-parallax text-white">
+      <div class="container-fluid">
+        <h1 class="text-center">Pre-registration open</h1>
+      </div>
+    </div>
+    <!---  SECTION 4 -------->
+    <section class="registration" id="registration">
+      <div class="container form bg-secondary bg-gradient py-5">
+        <header>
+          <h1 class="display-4 text-light">Pre-registrate yourself and be aware for the first places availables</h1>
+        </header>
+
+        <form class="row g-3 needs-validation text-light" novalidate>
+          <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 position-relative text-light">
+            <label for="validationTooltip02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 position-relative text-light">
+            <label for="validationTooltipUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              <input type="text" class="form-control" id="validationTooltipUsername"
+                aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Please choose a unique and valid @mail.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 position-relative text-light">
+            <label for="validationTooltip03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationTooltip03" required>
+            <div class="invalid-tooltip">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 position-relative text-light">
+            <label for="validationTooltip04" class="form-label">State</label>
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-tooltip">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 position-relative text-light">
+            <label for="validationTooltip05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationTooltip05" required>
+            <div class="invalid-tooltip">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <select class="form-dark form-select" multiple aria-label="multiple select example">
+            <option selected>Select one or multiple date of projection</option>
+            <option value="1">August 5th</option>
+            <option value="2">August 6th</option>
+            <option value="3">August 7th</option>
+            <option value="4">August 8th</option>
+          </select>
+          <div class="col-12">
+            <div class="form-dark inputs-transparent">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select the ticket number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success" type="submit">Submit form</button>
+          </div>
+        </form>
+
+
+
+
+
+        
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationServer01" class="form-label form-dark inputs-transparent text-light">First
+              name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationServer02" class="form-label form-dark inputs-transparent text-light">Last
+              name</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationServerUsername"
+              class="form-label form-dark inputs-transparent text-light">Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+              <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                Please enter an email.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationServer03" class="form-label form-dark inputs-transparent text-light">City</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03"
+              aria-describedby="validationServer03Feedback" required>
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer04" class="form-label form-dark inputs-transparent text-light">State</label>
+            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+              required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer05" class="form-label form-dark inputs-transparent text-light">Zip</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05"
+              aria-describedby="validationServer05Feedback" required>
+            <div id="validationServer05Feedback" class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <select class="form-dark form-select" multiple aria-label="multiple select example">
+            <option selected>Select one or multiple date of projection</option>
+            <option value="1">August 5th</option>
+            <option value="2">August 6th</option>
+            <option value="3">August 7th</option>
+            <option value="4">August 8th</option>
+          </select>
+          <div class="col-12">
+            <div class="form-dark inputs-transparent">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select the ticket number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Agree to terms and conditions
+              </label>
+              <div id="invalidCheck3Feedback" class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-success mt-3">Submit form</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </article>
 
   <!---  FOOTER -------->
