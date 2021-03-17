@@ -18,7 +18,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <link rel="icon" type="image/png" sizes="16x16" href="#">
-      <img class="logo" src="assets/logo.png" alt="logoPicture">
+      <img class="logo mx-3" src="assets/logo.png" alt="logoPicture">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -95,8 +95,8 @@
   <article>
 
     <!--PARALLAX EFFECT-->
-    <div class="bg-outdoor4 bg-parallax text-white d-flex justify-content-center align-item-center">
-      <h2 class="text-center" style="z-index: 1; position: relative;">Most Poular Family Movie</h2>
+    <div class="bg-outdoor4 bg-parallax text-white d-flex justify-content-center align-items-center">
+      <h2 class="text-center" style="z-index: 1; position: relative;">Welcome to Watch It Outside</h2>
     </div>
     <!---  SECTION 1 -------->
 
@@ -171,8 +171,8 @@
       </div>
     </section>
     <!---PARALLAX EFFECT1-->
-    <div class="bg-outdoor bg-parallax text-white d-flex justify-content-center align-item-center">
-      <h2 class="text-center" style="z-index: 1; position: relative;">Welcome to Watch It Outside</h2>
+    <div class="bg-outdoor bg-parallax text-white d-flex justify-content-center align-items-center">
+      <h2 class="text-center" style="z-index: 1; position: relative;">Most Poular Family Movie</h2>
     </div>
     <!---  SECTION 2 -------->
     <section class="film" id="movie">
@@ -369,10 +369,8 @@
 
     </section>
     <!---PARALLAX EFFECT2-->
-    <div class="bg-outdoor2 bg-parallax text-white">
-      <div class="container-fluid">
-        <h1 class="text-center">What's up in Public Garden</h1>
-      </div>
+    <div class="bg-outdoor2 bg-parallax text-white d-flex justify-content-center align-items-center">
+        <h1 class="text-center" style="z-index: 1; position: relative;">What's up in Public Garden</h1>
     </div>
     <!---  SECTION 3 -------->
     <section class="news" id="news">
@@ -412,10 +410,8 @@
       </div>
     </section>
     <!---PARALLAX EFFECT3-->
-    <div class="bg-outdoor3 bg-parallax text-white">
-      <div class="container-fluid">
-        <h1 class="text-center">Pre-registration open</h1>
-      </div>
+    <div class="bg-outdoor3 bg-parallax text-white d-flex justify-content-center align-items-center">
+        <h1 class="text-center" style="z-index: 1; position: relative;">Pre-registration open</h1>
     </div>
     <!---  SECTION 4 -------->
     <section class="registration" id="registration">
@@ -424,55 +420,37 @@
           <h1 class="display-4 text-light">Pre-registrate yourself and be aware for the first places availables</h1>
         </header>
 
-        <form class="row g-3 needs-validation text-light" novalidate>
+        <form class="row g-3 was-valited text-light">
           <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
+            <label for="validationTextarea1" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationTextarea1" value="Mark" required>
           </div>
           <div class="col-md-4 position-relative text-light">
-            <label for="validationTooltip02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
+            <label for="validationTextarea2" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationTextarea2" value="Otto" required>
           </div>
           <div class="col-md-4 position-relative text-light">
-            <label for="validationTooltipUsername" class="form-label">Email</label>
+            <label for="validationTextarea3" class="form-label">Email</label>
             <div class="input-group has-validation">
-              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              <span class="input-group-text" id="validationTextarea3">@</span>
               <input type="text" class="form-control" id="validationTooltipUsername"
                 aria-describedby="validationTooltipUsernamePrepend" required>
-              <div class="invalid-tooltip">
-                Please choose a unique and valid @mail.
-              </div>
             </div>
           </div>
           <div class="col-md-6 position-relative text-light">
-            <label for="validationTooltip03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationTooltip03" required>
-            <div class="invalid-tooltip">
-              Please provide a valid city.
-            </div>
+            <label for="validationTextarea4" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationTextarea4" required>
           </div>
           <div class="col-md-3 position-relative text-light">
-            <label for="validationTooltip04" class="form-label">State</label>
-            <select class="form-select" id="validationTooltip04" required>
+            <label for="validationTextarea5" class="form-label">State</label>
+            <select class="form-select" id="validationTextarea5" required>
               <option selected disabled value="">Choose...</option>
               <option>...</option>
             </select>
-            <div class="invalid-tooltip">
-              Please select a valid state.
-            </div>
           </div>
           <div class="col-md-3 position-relative text-light">
-            <label for="validationTooltip05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationTooltip05" required>
-            <div class="invalid-tooltip">
-              Please provide a valid zip.
-            </div>
+            <label for="validationTextarea6" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationTextarea6" required>
           </div>
           <select class="form-dark form-select" multiple aria-label="multiple select example">
             <option selected>Select one or multiple date of projection</option>
@@ -501,8 +479,8 @@
 
 
 
-        
-        <form class="row g-3">
+
+        <!-- <form class="row g-3">
           <div class="col-md-4">
             <label for="validationServer01" class="form-label form-dark inputs-transparent text-light">First
               name</label>
@@ -592,7 +570,7 @@
           <div class="col-12">
             <button type="button" class="btn btn-success mt-3">Submit form</button>
           </div>
-        </form>
+        </form> -->
       </div>
     </section>
   </article>
@@ -603,7 +581,7 @@
     <div class="bg-dark text-center" id="footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
+          <span class="col-12 col-md-6 col-lg-4 align-start">
             <div class="dropdown">
               <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -618,7 +596,7 @@
                       src="../assets/twitter.jpg" class="rounded img-logo" alt="SocialLink"></a></li>
               </ul>
             </div>
-          </div>
+          </span>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="dropdown">
               <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2"
@@ -635,7 +613,7 @@
             </div>
           </div>
           <div class="col-12 col-xl-4">
-            <div class="text-light text-footer mt-5">
+            <div class="text-light text-footer my-3">
               <p>Watch It Outside 2021 Copyright (C)</p>
             </div>
           </div>

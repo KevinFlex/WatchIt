@@ -20,7 +20,7 @@
 }
 
 .carousel-img {
-  height: 730px;
+  height: 90vh;
   object-fit: cover;
 }
 
@@ -31,7 +31,7 @@
 //---------PARALLAX-----------
 
 .bg-outdoor {
-  background-image: url("../assets/outdoor1.jpg");
+  background-image: url("../assets/outdoor4.png");
 }
 
 .bg-outdoor2 {
@@ -41,8 +41,8 @@
 .bg-outdoor3 {
   background-image: url("../assets/outdoor3.jpg");
 }
-.bg-outdoor3 {
-  background-image: url("../assets/outdoor4.jpg");
+.bg-outdoor4 {
+  background-image: url("../assets/outdoor1.jpg");
 }
 
 .bg-parallax {
@@ -75,7 +75,7 @@
 
 .img-logo {
   height: 40px;
-  margin: 0rem 5rem;
+  margin: 0rem 2rem;
 }
 
 section { 
@@ -96,6 +96,6 @@ p {
 }
 
 .card:hover{
-  size: 120%;
   background-color: rgba($color: #000000, $alpha: 0.4);
 }
+
