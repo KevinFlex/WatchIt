@@ -1,0 +1,101 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+//.alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+//}
+
+//@each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+//}
+
+
+
+//-----------MENU----------------
+.logo{
+  height: 80px;
+}
+
+.carousel-img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.accordion-body{
+  color: ivory;
+}
+
+//---------PARALLAX-----------
+
+.bg-outdoor {
+  background-image: url("../assets/outdoor4.png");
+}
+
+.bg-outdoor2 {
+  background-image: url("../assets/outdoor2.jpg");
+}
+
+.bg-outdoor3 {
+  background-image: url("../assets/outdoor3.jpg");
+}
+.bg-outdoor4 {
+  background-image: url("../assets/outdoor1.jpg");
+}
+
+.bg-parallax {
+  height: 400px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+}
+
+.bg-parallax:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+//---------SECTION2: MOVIE-----------
+
+.film-img {
+  object-fit: contain;
+  }
+
+
+.img-logo {
+  height: 40px;
+  margin: 0rem 2rem;
+}
+
+section { 
+  background: linear-gradient($indigo-100,$indigo-500); 
+}
+
+.form{
+  background: linear-gradient($indigo-500,$indigo-900); 
+}
+
+.film-player{
+  visibility: hidden;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card:hover{
+  background-color: rgba($color: #000000, $alpha: 0.4);
+}
+
